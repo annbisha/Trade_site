@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Trade</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-left">
+                    <button class="menu-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20.05 11H3.95C3.42533 11 3 11.4253 3 11.95V12.05C3 12.5747 3.42533 13 3.95 13H20.05C20.5747 13 21 12.5747 21 12.05V11.95C21 11.4253 20.5747 11 20.05 11Z" fill="#333333"/>
+                            <path d="M20.05 16H3.95C3.42533 16 3 16.4253 3 16.95V17.05C3 17.5747 3.42533 18 3.95 18H20.05C20.5747 18 21 17.5747 21 17.05V16.95C21 16.4253 20.5747 16 20.05 16Z" fill="#333333"/>
+                            <path d="M20.05 6H3.95C3.42533 6 3 6.42533 3 6.95V7.05C3 7.57467 3.42533 8 3.95 8H20.05C20.5747 8 21 7.57467 21 7.05V6.95C21 6.42533 20.5747 6 20.05 6Z" fill="#333333"/>
+                        </svg>
+                    </button>
+                    <a href="#" class="logo">
+                        LOGO
+                    </a>
+                    <ul class="menu">
+                        <li class="menu__list">
+                            <a href="#" class="menu__link">How it works</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link">Instructions</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link">Accounts</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link">Platforms</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <div class="language-selector">
+                        <select id="language-dropdown">
+                            <option value="en">EN</option>
+                            <option value="uk">УКР</option>
+                            <option value="es">ES</option>
+                        </select>
+                    </div>
+                    <button class="button button-sign" disabled>
+                        Sign in for free
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section__top">
+            <div class="container">
+                <div class="container__top">
+                    <div class="top__items">
+                        <h1 class="top__item-title">
+                            Trade everywhere. Invest here!
+                        </h1>
+                        <p class="top__item-text">
+                            We provide only the best trading software.
+                            The trading terminal MetaTrader4 is the most popular and 
+                            convenient platform for access to global exchanges. 
+                            You can work anywhere. 
+                        </p>
+                        <button class="button top__item-button">
+                            Start trading
+                        </button>
+                    </div>
+                    <div class="top__image">
+                        <img src="images/image_top.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__getStart">
+            <div class="container">
+                <div class="container__getStart">
+                    <h2 class="getStart__title">
+                        Getting Started Is <span class="highlight">Fast & Easy</span>
+                    </h2>
+                    <div class="getStart__items-container">
+                        <div class="getStart__item getStart__item-one">
+                            <p class="getStart__item-number">01.</p>
+                            <p class="getStart__item-title">Register</p>
+                            <p class="getStart__item-text">Complete the simple registration to get your trading credentials.</p>
+                        </div>
+                        <div class="getStart__item getStart__item-two">
+                            <p class="getStart__item-number">02.</p>
+                            <p class="getStart__item-title">Verification</p>
+                            <p class="getStart__item-text">Big Invest is required to verify your identity, upload your documents quickly and get approved in minutes.</p>
+                        </div>
+                        <div class="getStart__item getStart__item-three">
+                            <p class="getStart__item-number">03.</p>
+                            <p class="getStart__item-title">Deposit funds</p>
+                            <p class="getStart__item-text">Big Invest accepts credit cards and bank wires. Just use the secure deposit form and follow the steps.</p>
+                        </div>
+                        <div class="getStart__item getStart__item-four">
+                            <p class="getStart__item-number">04.</p>
+                            <p class="getStart__item-title">Start Trading</p>
+                            <p class="getStart__item-text">Once your deposit has been credited, you can begin trading instantly. In no time you will see profits rolling into your account.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__invest">
+            <div class="container">
+                <div class="container__invest">
+                    <div class="invest__section-left">
+                        <h2 class="invest__title">
+                            People love <span class="highlight_adaptiv">Big </span><span class="highlight">Invest</span>
+                        </h2>
+                        <div class="invest__arrows">
+                            <div class="invest__arrow-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="24" cy="24" r="23.5" fill="white" stroke="#6248FF"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M14.1587 7.17621C14.3133 7.02005 14.4 6.80917 14.4 6.58941C14.4 6.36965 14.3133 6.15877 14.1587 6.00261C14.0827 5.92551 13.9922 5.86428 13.8924 5.82249C13.7926 5.7807 13.6855 5.75918 13.5773 5.75918C13.4691 5.75918 13.3619 5.7807 13.2621 5.82249C13.1623 5.86428 13.0718 5.92551 12.9959 6.00261L8.39986 10.6922C8.24546 10.8487 8.15888 11.0598 8.15888 11.2796C8.15888 11.4995 8.24546 11.7105 8.39986 11.867L12.9959 16.5566C13.0718 16.6337 13.1623 16.6949 13.2621 16.7367C13.3619 16.7785 13.4691 16.8 13.5773 16.8C13.6855 16.8 13.7926 16.7785 13.8924 16.7367C13.9922 16.6949 14.0827 16.6337 14.1587 16.5566C14.3133 16.4005 14.4 16.1896 14.4 15.9698C14.4 15.7501 14.3133 15.5392 14.1587 15.383L10.3895 11.2778L14.1587 7.17621Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="invest__arrow-right">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="24" cy="24" r="23.5" fill="white" stroke="#6248FF"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9.84134 7.17621C9.68671 7.02005 9.59998 6.80917 9.59998 6.58941C9.59998 6.36965 9.68671 6.15877 9.84134 6.00261C9.91726 5.92551 10.0078 5.86428 10.1076 5.82249C10.2074 5.7807 10.3145 5.75918 10.4227 5.75918C10.5309 5.75918 10.6381 5.7807 10.7379 5.82249C10.8377 5.86428 10.9282 5.92551 11.0041 6.00261L15.6001 10.6922C15.7545 10.8487 15.8411 11.0598 15.8411 11.2796C15.8411 11.4995 15.7545 11.7105 15.6001 11.867L11.0041 16.5566C10.9282 16.6337 10.8377 16.6949 10.7379 16.7367C10.6381 16.7785 10.5309 16.8 10.4227 16.8C10.3145 16.8 10.2074 16.7785 10.1076 16.7367C10.0078 16.6949 9.91726 16.6337 9.84134 16.5566C9.68671 16.4005 9.59998 16.1896 9.59998 15.9698C9.59998 15.7501 9.68671 15.5392 9.84134 15.383L13.6105 11.2778L9.84134 7.17621Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invest__section-right" >
+                        <div class="invest__content" id="content1">
+                            <div class="invest__section-right-top">
+                                <img src="images/image_invest.jpg" alt="">
+                                <div class="text__img">
+                                    <p>Albert Abello</p>
+                                    <p>Director of Growth</p>
+                                </div>
+                            </div>
+                            <div class="invest__section-right-center">
+                                <svg class="quote-mark" xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30" fill="none">
+                                    <path d="M1.113 28V28.6101L1.71124 28.4903C5.52479 27.7261 8.70068 26.0612 10.922 23.428C13.1451 20.7928 14.3731 17.234 14.3731 12.7565V1V0.5H13.8731H1H0.5V1V13.6531V14.1531H1H7.54024C7.47188 15.966 7.02504 17.549 6.14534 18.8093C5.19104 20.1765 3.69469 21.2112 1.49706 21.735L1.113 21.8266V22.2214V28ZM21.2399 28V28.6085L21.8369 28.4905C25.7013 27.7266 28.8787 26.0618 31.0882 23.4269C33.299 20.7904 34.5 17.2314 34.5 12.7565V1V0.5H34H21.1269H20.6269V1V13.6531V14.1531H21.1269H27.6672C27.5988 15.966 27.152 17.549 26.2723 18.8093C25.318 20.1765 23.8216 21.2112 21.624 21.735L21.2399 21.8266V22.2214V28Z" stroke="#6248FF"/>
+                                </svg>
+                                <blockquote>
+                                    This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="invest__content" id="content2" style="display: none;">
+                            <div class="invest__section-right-top">
+                                <img src="images/image_invest.jpg" alt="">
+                                <div class="text__img">
+                                    <p>Albert Abello</p>
+                                    <p>Director of Growth</p>
+                                </div>
+                            </div>
+                            <div class="invest__section-right-center">
+                                <svg class="quote-mark" xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30" fill="none">
+                                    <path d="M1.113 28V28.6101L1.71124 28.4903C5.52479 27.7261 8.70068 26.0612 10.922 23.428C13.1451 20.7928 14.3731 17.234 14.3731 12.7565V1V0.5H13.8731H1H0.5V1V13.6531V14.1531H1H7.54024C7.47188 15.966 7.02504 17.549 6.14534 18.8093C5.19104 20.1765 3.69469 21.2112 1.49706 21.735L1.113 21.8266V22.2214V28ZM21.2399 28V28.6085L21.8369 28.4905C25.7013 27.7266 28.8787 26.0618 31.0882 23.4269C33.299 20.7904 34.5 17.2314 34.5 12.7565V1V0.5H34H21.1269H20.6269V1V13.6531V14.1531H21.1269H27.6672C27.5988 15.966 27.152 17.549 26.2723 18.8093C25.318 20.1765 23.8216 21.2112 21.624 21.735L21.2399 21.8266V22.2214V28Z" stroke="#6248FF"/>
+                                </svg>
+                                <blockquote>
+                                    This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="invest__content" id="content3" style="display: none;">
+                            <div class="invest__section-right-top">
+                                <img src="images/image_invest.jpg" alt="">
+                                <div class="text__img">
+                                    <p>Albert Abello</p>
+                                    <p>Director of Growth</p>
+                                </div>
+                            </div>
+                            <div class="invest__section-right-center">
+                                <svg class="quote-mark" xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30" fill="none">
+                                    <path d="M1.113 28V28.6101L1.71124 28.4903C5.52479 27.7261 8.70068 26.0612 10.922 23.428C13.1451 20.7928 14.3731 17.234 14.3731 12.7565V1V0.5H13.8731H1H0.5V1V13.6531V14.1531H1H7.54024C7.47188 15.966 7.02504 17.549 6.14534 18.8093C5.19104 20.1765 3.69469 21.2112 1.49706 21.735L1.113 21.8266V22.2214V28ZM21.2399 28V28.6085L21.8369 28.4905C25.7013 27.7266 28.8787 26.0618 31.0882 23.4269C33.299 20.7904 34.5 17.2314 34.5 12.7565V1V0.5H34H21.1269H20.6269V1V13.6531V14.1531H21.1269H27.6672C27.5988 15.966 27.152 17.549 26.2723 18.8093C25.318 20.1765 23.8216 21.2112 21.624 21.735L21.2399 21.8266V22.2214V28Z" stroke="#6248FF"/>
+                                </svg>
+                                <blockquote>
+                                    This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="invest__content" id="content4" style="display: none;">
+                            <div class="invest__section-right-top">
+                                <img src="images/image_invest.jpg" alt="">
+                                <div class="text__img">
+                                    <p>Albert Abello</p>
+                                    <p>Director of Growth</p>
+                                </div>
+                            </div>
+                            <div class="invest__section-right-center">
+                                <svg class="quote-mark" xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30" fill="none">
+                                    <path d="M1.113 28V28.6101L1.71124 28.4903C5.52479 27.7261 8.70068 26.0612 10.922 23.428C13.1451 20.7928 14.3731 17.234 14.3731 12.7565V1V0.5H13.8731H1H0.5V1V13.6531V14.1531H1H7.54024C7.47188 15.966 7.02504 17.549 6.14534 18.8093C5.19104 20.1765 3.69469 21.2112 1.49706 21.735L1.113 21.8266V22.2214V28ZM21.2399 28V28.6085L21.8369 28.4905C25.7013 27.7266 28.8787 26.0618 31.0882 23.4269C33.299 20.7904 34.5 17.2314 34.5 12.7565V1V0.5H34H21.1269H20.6269V1V13.6531V14.1531H21.1269H27.6672C27.5988 15.966 27.152 17.549 26.2723 18.8093C25.318 20.1765 23.8216 21.2112 21.624 21.735L21.2399 21.8266V22.2214V28Z" stroke="#6248FF"/>
+                                </svg>
+                                <blockquote>
+                                    This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="invest__section-right-bottom">
+                            <p id="contentCounter">01/04</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__asked">
+            <div class="container">
+                <div class="container__asked">
+                    <h2 class="asked__title">
+                        Frequently asked <span class="highlight">questions</span>
+                    </h2>
+                    <div class="asked__items">
+                        <div class="asked__item">
+                            <button class="asked__question">
+                                <h3>How do I change my details?</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16.2652 7 16.5196 7.10536 16.7071 7.29289C16.8946 7.48043 17 7.73478 17 8V16C17 16.2652 16.8946 16.5196 16.7071 16.7071C16.5196 16.8946 16.2652 17 16 17H8C7.73478 17 7.48043 16.8946 7.29289 16.7071C7.10536 16.5196 7 16.2652 7 16C7 15.7348 7.10536 15.4804 7.29289 15.2929C7.48043 15.1054 7.73478 15 8 15H15V8C15 7.73478 15.1054 7.48043 15.2929 7.29289C15.4804 7.10536 15.7348 7 16 7Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 16C15 15.7348 15.1054 15.4804 15.2929 15.2929C15.4804 15.1054 15.7348 15 16 15H24C24.2652 15 24.5196 15.1054 24.7071 15.2929C24.8946 15.4804 25 15.7348 25 16C25 16.2652 24.8946 16.5196 24.7071 16.7071C24.5196 16.8946 24.2652 17 24 17H17V24C17 24.2652 16.8946 24.5196 16.7071 24.7071C16.5196 24.8946 16.2652 25 16 25C15.7348 25 15.4804 24.8946 15.2929 24.7071C15.1054 24.5196 15 24.2652 15 24V16Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <div class="asked__answer" style="display: none;">
+                                <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                            </div>
+                        </div>
+                        <div class="asked__item">
+                            <button class="asked__question">
+                                <h3>What platforms will I be able to use?</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16.2652 7 16.5196 7.10536 16.7071 7.29289C16.8946 7.48043 17 7.73478 17 8V16C17 16.2652 16.8946 16.5196 16.7071 16.7071C16.5196 16.8946 16.2652 17 16 17H8C7.73478 17 7.48043 16.8946 7.29289 16.7071C7.10536 16.5196 7 16.2652 7 16C7 15.7348 7.10536 15.4804 7.29289 15.2929C7.48043 15.1054 7.73478 15 8 15H15V8C15 7.73478 15.1054 7.48043 15.2929 7.29289C15.4804 7.10536 15.7348 7 16 7Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 16C15 15.7348 15.1054 15.4804 15.2929 15.2929C15.4804 15.1054 15.7348 15 16 15H24C24.2652 15 24.5196 15.1054 24.7071 15.2929C24.8946 15.4804 25 15.7348 25 16C25 16.2652 24.8946 16.5196 24.7071 16.7071C24.5196 16.8946 24.2652 17 24 17H17V24C17 24.2652 16.8946 24.5196 16.7071 24.7071C16.5196 24.8946 16.2652 25 16 25C15.7348 25 15.4804 24.8946 15.2929 24.7071C15.1054 24.5196 15 24.2652 15 24V16Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <div class="asked__answer" style="display: none;">
+                                <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                            </div>
+                        </div>
+                        <div class="asked__item">
+                            <button class="asked__question">
+                                <h3>How do I change my details?</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16.2652 7 16.5196 7.10536 16.7071 7.29289C16.8946 7.48043 17 7.73478 17 8V16C17 16.2652 16.8946 16.5196 16.7071 16.7071C16.5196 16.8946 16.2652 17 16 17H8C7.73478 17 7.48043 16.8946 7.29289 16.7071C7.10536 16.5196 7 16.2652 7 16C7 15.7348 7.10536 15.4804 7.29289 15.2929C7.48043 15.1054 7.73478 15 8 15H15V8C15 7.73478 15.1054 7.48043 15.2929 7.29289C15.4804 7.10536 15.7348 7 16 7Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 16C15 15.7348 15.1054 15.4804 15.2929 15.2929C15.4804 15.1054 15.7348 15 16 15H24C24.2652 15 24.5196 15.1054 24.7071 15.2929C24.8946 15.4804 25 15.7348 25 16C25 16.2652 24.8946 16.5196 24.7071 16.7071C24.5196 16.8946 24.2652 17 24 17H17V24C17 24.2652 16.8946 24.5196 16.7071 24.7071C16.5196 24.8946 16.2652 25 16 25C15.7348 25 15.4804 24.8946 15.2929 24.7071C15.1054 24.5196 15 24.2652 15 24V16Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <div class="asked__answer" style="display: none;">
+                                <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                            </div>
+                        </div>
+                        <div class="asked__item">
+                            <button class="asked__question">
+                                <h3>How do I change my details?</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16.2652 7 16.5196 7.10536 16.7071 7.29289C16.8946 7.48043 17 7.73478 17 8V16C17 16.2652 16.8946 16.5196 16.7071 16.7071C16.5196 16.8946 16.2652 17 16 17H8C7.73478 17 7.48043 16.8946 7.29289 16.7071C7.10536 16.5196 7 16.2652 7 16C7 15.7348 7.10536 15.4804 7.29289 15.2929C7.48043 15.1054 7.73478 15 8 15H15V8C15 7.73478 15.1054 7.48043 15.2929 7.29289C15.4804 7.10536 15.7348 7 16 7Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 16C15 15.7348 15.1054 15.4804 15.2929 15.2929C15.4804 15.1054 15.7348 15 16 15H24C24.2652 15 24.5196 15.1054 24.7071 15.2929C24.8946 15.4804 25 15.7348 25 16C25 16.2652 24.8946 16.5196 24.7071 16.7071C24.5196 16.8946 24.2652 17 24 17H17V24C17 24.2652 16.8946 24.5196 16.7071 24.7071C16.5196 24.8946 16.2652 25 16 25C15.7348 25 15.4804 24.8946 15.2929 24.7071C15.1054 24.5196 15 24.2652 15 24V16Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <div class="asked__answer" style="display: none;">
+                                <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                            </div>
+                        </div>
+                        <div class="asked__item">
+                            <button class="asked__question">
+                                <h3>How do I change my details?</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16.2652 7 16.5196 7.10536 16.7071 7.29289C16.8946 7.48043 17 7.73478 17 8V16C17 16.2652 16.8946 16.5196 16.7071 16.7071C16.5196 16.8946 16.2652 17 16 17H8C7.73478 17 7.48043 16.8946 7.29289 16.7071C7.10536 16.5196 7 16.2652 7 16C7 15.7348 7.10536 15.4804 7.29289 15.2929C7.48043 15.1054 7.73478 15 8 15H15V8C15 7.73478 15.1054 7.48043 15.2929 7.29289C15.4804 7.10536 15.7348 7 16 7Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 16C15 15.7348 15.1054 15.4804 15.2929 15.2929C15.4804 15.1054 15.7348 15 16 15H24C24.2652 15 24.5196 15.1054 24.7071 15.2929C24.8946 15.4804 25 15.7348 25 16C25 16.2652 24.8946 16.5196 24.7071 16.7071C24.5196 16.8946 24.2652 17 24 17H17V24C17 24.2652 16.8946 24.5196 16.7071 24.7071C16.5196 24.8946 16.2652 25 16 25C15.7348 25 15.4804 24.8946 15.2929 24.7071C15.1054 24.5196 15 24.2652 15 24V16Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <div class="asked__answer" style="display: none;">
+                                <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                            </div>
+                        </div>
+                        <div class="asked__item">
+                            <button class="asked__question">
+                                <h3>How do I change my details?</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16.2652 7 16.5196 7.10536 16.7071 7.29289C16.8946 7.48043 17 7.73478 17 8V16C17 16.2652 16.8946 16.5196 16.7071 16.7071C16.5196 16.8946 16.2652 17 16 17H8C7.73478 17 7.48043 16.8946 7.29289 16.7071C7.10536 16.5196 7 16.2652 7 16C7 15.7348 7.10536 15.4804 7.29289 15.2929C7.48043 15.1054 7.73478 15 8 15H15V8C15 7.73478 15.1054 7.48043 15.2929 7.29289C15.4804 7.10536 15.7348 7 16 7Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 16C15 15.7348 15.1054 15.4804 15.2929 15.2929C15.4804 15.1054 15.7348 15 16 15H24C24.2652 15 24.5196 15.1054 24.7071 15.2929C24.8946 15.4804 25 15.7348 25 16C25 16.2652 24.8946 16.5196 24.7071 16.7071C24.5196 16.8946 24.2652 17 24 17H17V24C17 24.2652 16.8946 24.5196 16.7071 24.7071C16.5196 24.8946 16.2652 25 16 25C15.7348 25 15.4804 24.8946 15.2929 24.7071C15.1054 24.5196 15 24.2652 15 24V16Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <div class="asked__answer" style="display: none;">
+                                <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                            </div>
+                        </div>
+                        <div class="asked__item">
+                            <button class="asked__question">
+                                <h3>How do I change my details?</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16.2652 7 16.5196 7.10536 16.7071 7.29289C16.8946 7.48043 17 7.73478 17 8V16C17 16.2652 16.8946 16.5196 16.7071 16.7071C16.5196 16.8946 16.2652 17 16 17H8C7.73478 17 7.48043 16.8946 7.29289 16.7071C7.10536 16.5196 7 16.2652 7 16C7 15.7348 7.10536 15.4804 7.29289 15.2929C7.48043 15.1054 7.73478 15 8 15H15V8C15 7.73478 15.1054 7.48043 15.2929 7.29289C15.4804 7.10536 15.7348 7 16 7Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 16C15 15.7348 15.1054 15.4804 15.2929 15.2929C15.4804 15.1054 15.7348 15 16 15H24C24.2652 15 24.5196 15.1054 24.7071 15.2929C24.8946 15.4804 25 15.7348 25 16C25 16.2652 24.8946 16.5196 24.7071 16.7071C24.5196 16.8946 24.2652 17 24 17H17V24C17 24.2652 16.8946 24.5196 16.7071 24.7071C16.5196 24.8946 16.2652 25 16 25C15.7348 25 15.4804 24.8946 15.2929 24.7071C15.1054 24.5196 15 24.2652 15 24V16Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <div class="asked__answer" style="display: none;">
+                                <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__contact">
+            <div class="container">
+                <div class="container__contact">
+                    <div class="contact__content-left">
+                        <h2 class="contact__content-left-title">
+                            Contact us!
+                        </h2>
+                        <p class="contact__content-left_text-one">
+                            The support staff and customer service are available to help you with any questions or needs you might have. Just drop us a line.
+                        </p>
+                        <p class="contact__content-left_text-two">
+                            This site is owned and operated by Kode Tech Solutions LTD
+                        </p>
+                        <p class="contact__content-left_phone">
+                            Phone:
+                        </p>
+                        <p class="contact__content-left_phone-text">
+                            442038857261
+                        </p>
+                        <p class="contact__content-left_email">
+                            Email:
+                        </p>
+                        <p class="contact__content-left_email-text">
+                            help@google.com
+                        </p>
+                        <p class="contact__content-left_adress">
+                            Address:
+                        </p>
+                        <p class="contact__content-left_adress-text">
+                            Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro, Republic of the Marshall Islands, MH 96960
+                        </p>
+                    </div>
+                    <div class="contact__content-right">
+                        <div class="form-container">
+                            <form class="contact-form">
+                                <input type="text" id="name" name="name" placeholder="Name">
+                                <input type="email" id="email" name="email" placeholder="Email">
+                                <textarea id="message" name="message" placeholder="Message"></textarea>
+                                <button class="button" type="submit">SEND</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <a href="#" class="logo">
+                    LOGO
+                </a>
+                <div class="footer__information-one">
+                    <h4>Information and high risk warning:</h4>
+                    <p>Trading with foreign exchange (FX), contract for differences (CFDs) and precious metals carries a high level of risk that may not be suitable for all investors. Leverage creates additional risk and loss exposure. Before you decide to trade foreign exchange or contract for differences, carefully consider your investment objectives, experience level, and risk tolerance.</p>
+                </div>
+                <div class="footer__information-two">
+                    <h4>Legal disclaimer:</h4>
+                    <p>Forex trading entails significant risks and is not appropriate for all investors. The possibility of incurring substantial losses should be taken into account. It is therefore important to understand the possible consequences of investing. Traders should weigh their earning potential against the risks involved and act accordingly. Interactive Trade Ltd operating under brand and using domenLink domain within the European Economic Area.</p>
+                </div>
+                <div class="footer__menu-container">
+                    <ul class="footer__menu">
+                        <li class="footer__menu_list">
+                            <a href="#" class="footer__menu_link">About us</a>
+                        </li>
+                        <li class="footer__menu_list">
+                            <a href="#" class="footer__menu_link">Instructions</a>
+                        </li>
+                        <li class="footer__menu_list">
+                            <a href="#" class="footer__menu_link">Platforms</a>
+                        </li>
+                        <li class="footer__menu_list">
+                            <a href="#" class="footer__menu_link">Contact Us</a>
+                        </li>
+                        <li class="footer__menu_list">
+                            <a href="#" class="footer__menu_link">Sign in</a>
+                        </li>
+                        <li class="footer__menu_list">
+                            <a href="#" class="footer__menu_link">Sign up for free</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy__container">
+                <p>
+                    Copyright 2020, All Right Reserved
+                </p>
+                <p>
+                    Terms and Conditions
+                </p>
+                <p>
+                    Privacy Policy
+                </p>
+                <p>
+                    Risk Warnings
+                </p>
+                <p>
+                    Anti-Money Laundering
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
